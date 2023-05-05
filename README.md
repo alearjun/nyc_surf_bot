@@ -1,6 +1,8 @@
 # Telegram Surf Bot
 Telegram bot which tells users the surf conditions in Rockaway beach, NY. The nyc_surf_bot usings stormglass.io to fetch weather data. Commands are received from the Telegram webhook, and responses posted via the API. See it in action below: 
 
+<img src="https://github.com/alearjun/nyc_surf_bot/blob/main/nyc_surf_bot.gif" width="25%"/>
+
 ## Set up your own bot
 
 ### 1. Create Telegram bot
@@ -24,7 +26,7 @@ longitude = -73.8227
 
 There are a variety of options you can choose to deploy the code. I used a Lambda serverless set up with API Gateway. To deploy to Lambda, you'll want to install requests and associated libraries into the directory you're currently in by running ` pip3 install requests -t .`. Once you've done this, you can zip the directory by running `zip -r9 lambda-deployment-package.zip .`. 
 
-In Lambda, create a new function and upload your code. Set the trigger to API Gateway and great a new API. 
+In Lambda, create a new function and upload your code. Make sure to add your Telegram Bot Token and Stormglass API key as environment variables to the Lambda function. Set the trigger to API Gateway and great a new API. 
 
 ### 5. Set up Telegram Bot Webhook 
 
