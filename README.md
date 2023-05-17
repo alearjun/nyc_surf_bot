@@ -1,7 +1,7 @@
 # Telegram Surf Bot
 Telegram bot which tells users the surf conditions in Rockaway beach, NY. The nyc_surf_bot uses stormglass.io to fetch weather data. Commands are received from the Telegram webhook, and responses posted via the API. See it in action below: 
 
-<img src="https://github.com/alearjun/nyc_surf_bot/blob/main/nyc_surf_bot.gif" width="25%"/>
+<img src="https://github.com/alearjun/nyc_surf_bot/blob/main/nyc_surf_bot.gif" width="40%"/>
 
 ## Set up your own bot
 
